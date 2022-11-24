@@ -1,3 +1,5 @@
+$x = New-Object -ComObject Shell.Application
+$x.minimizeall()
 $t =1 
 foreach($i in 1..7){
  start-process "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" https://www.youtube.com/watch?v=zfwJiG2F698#t=2m32s
