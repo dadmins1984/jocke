@@ -9,6 +9,7 @@ $sh = New-Object -ComObject "Shell.Application"
 $sh.Namespace(17).Items() | 
   Where-Object { $_.Type -eq "CD Drive" } | 
   foreach { $_.InvokeVerb("Eject") }
+  Add-Type -AssemblyName System.Windows.Forms
   $Pos = [System.Windows.Forms.Cursor]::Position
   $x = ($pos.X % 500) + 1
   $y = ($pos.Y % 500) + 1
