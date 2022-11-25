@@ -10,8 +10,8 @@ $timeout = new-timespan -Seconds 80
 $sw = [diagnostics.stopwatch]::StartNew()
 while ($sw.elapsed -lt $timeout){
   $Pos = [System.Windows.Forms.Cursor]::Position
-  $x = ($pos.X % 20) + 1
-  $y = ($pos.Y % 20) + 1
+  $x = ($pos.X % 100) + 1
+  $y = ($pos.Y % 800) + 1
   [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
 }
 $x = New-Object -ComObject Shell.Application
