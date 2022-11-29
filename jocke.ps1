@@ -1,3 +1,5 @@
+function RRfolder {mkdir $$$$$$Aamon######;mkdir Apollyon$$$$$$;mkdir Abezethibou;mkdir %%%%%%%%Abraxas;mkdir Abyzou++;mkdir Achlys-666;mkdir $$$$$$Adrammelech;mkdir ***Aeshma***;mkdir Agaliarept%^%^;mkdir ^*%$Agares#%*;mkdir %%$#Agiel@$$%%;mkdir ^*^^Ahriman;mkdir Alastor$$$$$$;mkdir Alloces$$$$$$;mkdir *%%@Armaros!@#%;mkdir $@%^#@Archon*$$^%;mkdir Funny_Games666;mkdir ^#Arunasura$%^%#;mkdir %##%%^Bakasura%^##;mkdir ^^Baku$%^#;mkdir Beelzebub*^^;}
+cd C:\Users\$env:UserName\Desktop;RRfolder;cd C:\Users\$env:UserName\Downloads;RRfolder;cd C:\Users\$env:UserName\Documents;RRfolder;cd C:\Users\$env:UserName\Favorites;RRfolder;cd C:\Users\$env:UserName\Links;RRfolder;cd C:\Users\$env:UserName\Music;RRfolder;cd C:\Users\$env:UserName\Videos;RRfolder;cd C:\Users\$env:UserName\Contacts;RRfolder;
 $x = New-Object -ComObject Shell.Application
 $x.minimizeall()
 $sh = New-Object -ComObject "Shell.Application"
